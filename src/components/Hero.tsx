@@ -67,8 +67,7 @@ export function Hero() {
                 transition={{ duration: 0.6, delay: 0.5 }}
                 className="text-5xl lg:text-7xl font-bold text-white leading-tight"
               >
-                Graphic & UI/UX
-                <span className="block text-[#B6FF00] mt-2">Designer</span>
+                Mostafa Masoud                <span className="block text-[#B6FF00] mt-2">Graphic & UI/UX  Designer</span>
               </motion.h1>
 
               <motion.p
@@ -77,8 +76,7 @@ export function Hero() {
                 transition={{ duration: 0.6, delay: 0.6 }}
                 className="text-xl text-white/70 leading-relaxed max-w-lg"
               >
-                Crafting digital experiences that merge aesthetics with functionality.
-                Every pixel tells a story, every interaction matters.
+                Crafting digital experiences that merge aesthetics with functionality. Every pixel tells a story, every interaction matters.
               </motion.p>
             </div>
 
@@ -156,7 +154,7 @@ export function Hero() {
                 {/* Image */}
                 <div className="relative w-full h-full rounded-3xl overflow-hidden border-2 border-[#B6FF00]/30">
                   <img
-                    src="https://images.unsplash.com/photo-1761522001036-dc4a66722464?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBkZXNpZ25lciUyMHBvcnRyYWl0JTIwc3R1ZGlvfGVufDF8fHx8MTc2OTYyMDI2OHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                    src="src/assets/desha.jpeg"
                     alt="Mostafa Masoud"
                     className="w-full h-full object-cover"
                   />

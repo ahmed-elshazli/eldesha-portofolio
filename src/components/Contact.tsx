@@ -7,15 +7,18 @@ const socialLinks = [
   { icon: Linkedin, label: 'LinkedIn', href: '#', color: '#0077B5' },
   { icon: Facebook, label: 'Facebook', href: '#', color: '#1877F2' },
   { 
-    icon: ({ className, style }: { className?: string; style?: React.CSSProperties }) => (
-      <svg className={className} style={style} viewBox="0 0 24 24" fill="currentColor">
-        <path d="M20.07 6.35H15v-1.41h5.07v1.41zM19 16.05c0 2.2-1.79 3.95-4.02 3.95-2.22 0-4.02-1.75-4.02-3.95V8h4.02c2.23 0 4.02 1.75 4.02 3.95v4.1zm-6.03-6.52v4.9h2.01c1.21 0 2.01-.88 2.01-2.01V9.53h-4.02zm-7.2 5.36c-.57 0-1.01-.44-1.01-1.01 0-.58.44-1.02 1.01-1.02s1.01.44 1.01 1.02c0 .57-.44 1.01-1.01 1.01zm1.01 0h1v.01c0 1.07.87 1.94 1.94 1.94.81 0 1.5-.5 1.79-1.21H9.99c-.29.38-.75.61-1.27.61-1.1 0-2.01-.91-2.01-2.01s.91-2.01 2.01-2.01c.52 0 .98.23 1.27.61h1.53c-.29-.71-.98-1.21-1.79-1.21-1.07 0-1.94.87-1.94 1.94v.01h-1zm-1.01-5.36c-.57 0-1.01-.44-1.01-1.01s.44-1.02 1.01-1.02 1.01.44 1.01 1.02-.44 1.01-1.01 1.01z"/>
-      </svg>
+    icon: ({ className }) => (
+      <img 
+        src={'src/assets/ri_behance-fill.svg'} 
+        alt="Behance" 
+        className={className} // ليأخذ نفس مقاس الأيقونات الأخرى (w-6 h-6 etc)
+        style={{ objectFit: 'contain' }} // لضمان ظهور الشعار كاملاً دون قص
+      />
     ), 
     label: 'Behance', 
     href: '#', 
     color: '#1769FF' 
-  },
+},
   { 
     icon: ({ className, style }: { className?: string; style?: React.CSSProperties }) => (
       <svg className={className} style={style} viewBox="0 0 24 24" fill="currentColor">
@@ -120,7 +123,7 @@ export function Contact() {
                       ? 'border-[#B6FF00] shadow-[0_0_20px_rgba(182,255,0,0.2)]'
                       : 'border-white/10'
                   }`}
-                  placeholder="john@example.com"
+                  placeholder="mostafamasoud3434@gmail.com"
                   required
                 />
               </div>
@@ -193,7 +196,7 @@ export function Contact() {
                   <span>mostafa@example.com</span>
                 </div>
                 <a 
-                  href="https://wa.me/201234567890" 
+                  href="https://wa.me/201068082268" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 text-white/80 hover:text-[#25D366] transition-colors group"

@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'motion/react';
 import { Download } from 'lucide-react';
+// 1. استيراد الصورة هنا لضمان عملها بعد الرفع
+import logoImg from '/src/assets/Navbar.png'; 
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -41,14 +43,22 @@ export function Navbar() {
     >
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
         <div className="flex items-center justify-between h-20">
-          {/* Logo */}
+          
+          {/* Logo Section - تم التعديل هنا */}
           <motion.div
-            className="text-xl font-bold tracking-tight cursor-pointer"
+            className="flex items-center justify-center cursor-pointer"
             whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           >
-            <span className="text-white">Mostafa</span>
-            <span className="text-[#B6FF00]"> Masoud</span>
+            <img 
+              src={logoImg} // استخدام المتغير المستورد
+              alt="Logo" 
+              // h-10: ارتفاع مناسب للنافكار
+              // w-auto: العرض يتناسب تلقائياً
+              // object-contain: يمنع مط الصورة
+              className="h-10 w-auto object-contain" 
+            />
           </motion.div>
 
           {/* Navigation Links */}
@@ -91,7 +101,6 @@ export function Navbar() {
                 whileHover={{ scale: 1, opacity: 0.2 }}
                 transition={{ duration: 0.3 }}
               />
-              {/* Glow effect */}
               <div className="absolute inset-0 blur-xl bg-[#B6FF00] opacity-50 group-hover:opacity-75 transition-opacity" />
             </motion.button>
           </div>
