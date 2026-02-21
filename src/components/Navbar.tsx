@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion } from 'motion/react';
 import { Download } from 'lucide-react';
 // 1. استيراد الصورة هنا لضمان عملها بعد الرفع
-import logoImg from '/src/assets/Navbar.png'; 
+import logoImg from '../../build/assets/Navbar.png'; 
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);

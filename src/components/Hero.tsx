@@ -154,7 +154,7 @@ export function Hero() {
                 {/* Image */}
                 <div className="relative w-full h-full rounded-3xl overflow-hidden border-2 border-[#B6FF00]/30">
                   <img
-                    src="src/assets/desha.jpeg"
+                    src="build/assets/desha.jpeg"
                     alt="Mostafa Masoud"
                     className="w-full h-full object-cover"
                   />
