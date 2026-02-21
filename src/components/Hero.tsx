@@ -1,6 +1,6 @@
 import { motion } from 'motion/react';
 import { ArrowRight, Sparkles, Download } from 'lucide-react';
-
+import desha from '../../build/assets/desha.jpeg';
 export function Hero() {
   const scrollToProjects = () => {
     document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
@@ -154,7 +154,7 @@ export function Hero() {
                 {/* Image */}
                 <div className="relative w-full h-full rounded-3xl overflow-hidden border-2 border-[#B6FF00]/30">
                   <img
-                    src="build/assets/desha.jpeg"
+                    src={desha}
                     alt="Mostafa Masoud"
                     className="w-full h-full object-cover"
                   />
